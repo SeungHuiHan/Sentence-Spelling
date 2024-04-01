@@ -29,11 +29,10 @@ with open(file_path, 'r', encoding='utf-8') as file:
 
 # 문자 수를 계산합니다.
 character_count = len(memo_content)
-print('문자 수',character_count)
+print('글자 수: ',character_count)
 
 # 문자열을 1000자씩 나누어 리스트에 저장합니다.
 chunks = [memo_content[i:i+300] for i in range(0, len(memo_content), 300)]
-print('덩어리 개수',len(chunks))
 
 for i, chunk in enumerate(chunks):
 
